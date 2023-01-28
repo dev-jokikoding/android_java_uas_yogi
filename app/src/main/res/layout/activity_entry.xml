@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EntryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_barang"/>
+
+        <EditText
+            android:id="@+id/et_nama_barang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nama_barang"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alamat"/>
+
+        <EditText
+            android:id="@+id/et_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/alamat"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nomor_telepon_penjual"/>
+
+        <EditText
+            android:id="@+id/et_no_telp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nomor_telepon_penjual"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kode_barang"/>
+
+        <EditText
+            android:id="@+id/et_kode_barang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/kode_barang"
+            android:importantForAutofill="no"
+            android:inputType="textVisiblePassword"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jumlah_penjualan"/>
+
+        <EditText
+            android:id="@+id/et_jumlah_penjualan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/jumlah_penjualan"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/harga_satuan"/>
+
+        <EditText
+            android:id="@+id/et_harga_satuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/harga_satuan"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diskon"/>
+
+        <EditText
+            android:id="@+id/et_diskon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/diskon"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_harga"/>
+
+        <EditText
+            android:id="@+id/et_total_harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/total_harga"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                app:layout_constraintEnd_toStartOf="@+id/btn_entry"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_entry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tambahkan"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/btn_cancel"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>

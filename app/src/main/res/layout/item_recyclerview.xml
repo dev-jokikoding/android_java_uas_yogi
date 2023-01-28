@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="16dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/purple_200"
+    android:id="@+id/cv_item_barang">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/id"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_more"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/transparent_ic_more_horiz"
+                app:backgroundTint="@color/white"
+                android:backgroundTint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tv_nama_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nama_barang"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_kode_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/t001"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jalan_jakarta"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_no_telp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_telp"
+            android:textColor="@color/white"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_harga_satuan_st"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/harga_satuan"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/divider_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/divider"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/tv_harga_satuan_st"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_harga_satuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rp_25000"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/divider_1"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_jumlah_barang_st"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jumlah_beli"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/divider_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/divider"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/tv_jumlah_barang_st"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_jumlah_barang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_4"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/divider_2"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/tv_diskon_st"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/diskon"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/divider_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/divider"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/tv_diskon_st"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_diskon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_10"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@id/divider_3"
+                app:layout_constraintTop_toTopOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_total_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="@string/rp_90000"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">UAS Yogianto Syahputra 2110031806052</string>
+    <string name="splash_text">Yogi Food Court</string>
+    <string name="nama_barang">Nama Barang</string>
+    <string name="alamat">Alamat</string>
+    <string name="nomor_telepon_penjual">Nomor Telepon Penjual</string>
+    <string name="kode_barang">Kode Barang</string>
+    <string name="jumlah_penjualan">Jumlah Penjualan</string>
+    <string name="harga_satuan">Harga Satuan</string>
+    <string name="diskon">Diskon</string>
+    <string name="total_harga">Total Harga</string>
+    <string name="cancel">Cancel</string>
+    <string name="tambahkan">Tambahkan</string>
+    <string name="id">1</string>
+    <string name="t001">T001</string>
+    <string name="harga">Harga</string>
+    <string name="divider">:</string>
+    <string name="rp_25000">Rp. 25000</string>
+    <string name="jumlah_beli">Jumlah Beli</string>
+    <string name="_4">4</string>
+    <string name="_10">10</string>
+    <string name="rp_90000">Rp. 90000</string>
+    <string name="jalan_jakarta">Jalan Jakarta</string>
+    <string name="no_telp">08214123412</string>
+    <string name="update">Update</string>
+    <string name="delete">Hapus</string>
+    <string name="keluar">Selesai</string>
+    <string name="tambah_barang">Tambah Barang</string>
+    <string name="dialog_delete">Apakah Anda yakin ingin menghapus data barang ini?</string>
+    <string name="selesai">Selesai</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+</resources>
